@@ -1,0 +1,71 @@
+/* Stylesheet for drawing a flow chart. */
+
+.flowchart .box {
+  border:1px solid #000;
+  border-radius:5px;
+  padding:5px;
+}
+
+.flowchart .open {
+  padding:5px;
+}
+
+.flowchart ul {
+  padding-top:30px;
+  position:relative;
+}
+
+.flowchart li {
+  float:left;
+  text-align:center;
+  list-style-type:none;
+  position:relative;
+  padding:30px 10px 0 10px;
+}
+
+.flowchart li::before,.flowchart li:after {
+  content:'';
+  position:absolute;
+  top:0;
+  right:50%;
+  border-top:1px solid #000;
+  width:50%;
+  height:30px;
+}
+
+.flowchart li::after {
+  right:auto;
+  left:50%;
+  border-left:1px solid #000;
+}
+
+.flowchart ul ul::before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:50%;
+  border-left:1px solid #000;
+  width:0;
+  height:30px;
+}
+
+.flowchart li:only-child::after,.flowchart li:only-child::before {
+  border-top:0;
+}
+
+.flowchart li:first-child::before,.flowchart li:last-child::after {
+  border-top:0;
+}
+
+.flowchart li .open:hover,.flowchart li .open:hover+ul li,
+.flowchart li .box:hover,.flowchart li .box:hover+ul li {
+  color:#f00;
+  transition:0.2s;
+}
+
+.flowchart li .box:hover,.flowchart li *:hover+ul li .box {
+  background:#ffc;
+  transition:0.2s;
+}
+
+
