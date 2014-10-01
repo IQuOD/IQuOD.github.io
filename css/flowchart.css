@@ -4,10 +4,18 @@
   border:1px solid #000;
   border-radius:5px;
   padding:5px;
+  background:#ffe;
 }
 
 .flowchart .open {
   padding:5px;
+}
+
+.flowchart .uncs {
+  border:1px solid #000;
+  border-radius:5px;
+  padding:5px;
+  background:#cfc;
 }
 
 .flowchart ul {
@@ -23,7 +31,7 @@
   padding:30px 10px 0 10px;
 }
 
-.flowchart li::before,.flowchart li:after {
+.flowchart li::before,.flowchart li::after {
   content:'';
   position:absolute;
   top:0;
@@ -49,7 +57,7 @@
   height:30px;
 }
 
-.flowchart li:only-child::after,.flowchart li:only-child::before {
+.flowchart ul li:only-child::after,.flowchart li:only-child::before {
   border-top:0;
 }
 
@@ -57,14 +65,41 @@
   border-top:0;
 }
 
+.flowchart .withtitle li:first-child::after {
+  border:0;
+}
+
+.flowchart .withtitle li:nth-child(2)::before {
+  border-top:0;
+}
+
+.flowchart .notitle li:nth-child(2)::before {
+  border-top:1px solid #000;
+}
+
+.flowchart .notitle li:first-child::after {
+  border-left:1px solid #000;
+  border-top:1px solid #000;
+}
+
+.flowchart .notitle li:only-child::after {
+  border-top:0;
+}
+
 .flowchart li .open:hover,.flowchart li .open:hover+ul li,
-.flowchart li .box:hover,.flowchart li .box:hover+ul li {
+.flowchart li .box:hover,.flowchart li .box:hover+ul li,
+.flowchart li .uncs:hover,.flowchart li .uncs:hover+ul li {
   color:#f00;
   transition:0.2s;
 }
 
 .flowchart li .box:hover,.flowchart li *:hover+ul li .box {
   background:#ffc;
+  transition:0.2s;
+}
+
+.flowchart li .uncs:hover,.flowchart li *:hover+ul li .uncs {
+  background:#ff6;
   transition:0.2s;
 }
 
