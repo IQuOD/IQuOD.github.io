@@ -55,4 +55,28 @@ Do these steps every time you want to propose a change:
 
     This sends your changes to your fork on GitHub.
 
-4. Finally, head back to your fork on GitHub
+4. Finally, head back to your fork on GitHub, click *New Pull Request*, and make the dropdowns presented look like this:
+
+    ![](images/set-up-pr.png)
+
+    the red box indicates the only thing you should need to change; make it match the branch name you created above.
+
+5. Click *Create Pull Request*, describe the reasoning for your change in the box provided, and click *Create Pull Request* one last time. This submits your changes for peer review - a maintainer of the website will review your changes and either accept them or ask for corrections.
+
+#### If you're stuck
+
+Open an issue, the maintainers are always happy to help.
+
+#### Learn More about version control
+
+The instructions above are the minimum possible number of steps to make a contribution; if you'd like to learn more about what they mean and other things you can do with git, start with [Software Carpentry's introdcutory lesson](https://swcarpentry.github.io/git-novice/). 
+
+
+
+
+
+
+
+
+
+
