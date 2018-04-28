@@ -11,35 +11,12 @@
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/templates.js"></script>
 </head>
 
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<table  id="headertable" border="0px" width="100%">
-				<tr>
-					<td width=7% >
-						<a href="index.html"><img src="images/iquod_logo.png"></a>
-					</td>
-					<td width="65%" >
-						<a class="navbar-brand" style="margin-top: 15px; font-size:28px;" rel="home" href="index.html" title=" ">International Quality controlled Ocean Database</a>
-					</td>	
-				</tr>
-				<tr>
-					<td colspan="2">
-						<ul class="nav navbar-nav" style="margin-top:4px;">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="news.html">News</a></li>
-							<li style='background-color:#428bca'><a style='color:#000000' href="documents.html">Documents and Progress reports</a></li>
-							<li><a href="links.html">Links</a></li>
-						</ul>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+	<div id='nav' class="navbar navbar-inverse navbar-fixed-top" role="navigation"></div>
 
 	<div class="content">
 	    <div class="container">
@@ -75,7 +52,7 @@
                     </tr>                    
 		   			<tr>
 						<td>First IQuoD workshop report </td>
-						<td style="text-align:center">Comming soon</td>
+						<td style="text-align:center">Coming soon</td>
                     </tr>
 		   			<tr>
 						<td>Ocean Sciences article </td>
@@ -100,9 +77,12 @@
         </div>
  	</div>
 
-	<div id="footer">
-		<img src="images/footer_logos.png">
-		<p>Developed by Rebecca Cowley (CSIRO) and Ricardo Domingues (NOAA/AOML)</p>
-	</div>
+	<div id="footer"></div>
+
+	<script>
+		// inject nav and footer
+	    nav('nav', 'docs')
+		footer('footer')
+	</script>
 </body>
 </html>

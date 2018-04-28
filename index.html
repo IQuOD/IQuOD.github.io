@@ -11,36 +11,12 @@
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/templates.js"></script>
 </head>
 
 <body>
 
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<table  id="headertable" border="0px" width="100%">
-				<tr>
-					<td width=7% >
-						<a href="index.html"><img src="images/iquod_logo.png"></a>
-					</td>
-					<td width="65%" >
-						<a class="navbar-brand" style="margin-top: 15px; font-size:28px;" rel="home" href="index.html" title=" ">International Quality controlled Ocean Database</a>
-					</td>	
-				</tr>
-				<tr>
-					<td colspan="2">
-						<ul class="nav navbar-nav" style="margin-top:4px;">
-							<li style='background-color:#428bca'><a style='color:#000000' href="index.html">Home</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="documents.html">Documents and Progress reports</a></li>
-							<li><a href="links.html">Links</a></li>
-						</ul>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-
+	<div id='nav' class="navbar navbar-inverse navbar-fixed-top" role="navigation"></div>
 
 	<div class="content" style="padding-top:0px;padding-left:0px;background:rgb(238, 233, 233);margin-top:68px">
 		<div class="container">
@@ -55,13 +31,13 @@
 				<table border=0px width="100%" style="background:white">
 					<td><center><h3>IQuOD activities are supported by:</h3></center></td>	  
 					<td>
-						<center><a target="_blank" href="http://www.clivar.org/clivar-panels/gsop"><img height=90px style="padding-top:0px;" src="http://www.iquod.org//images/clivar.png" alt="..."><br>CLIVAR GSOP</a></center>
+						<center><a target="_blank" href="http://www.clivar.org/clivar-panels/gsop"><img height=90px style="padding-top:0px;" src="images/clivar.png" alt="..."><br>CLIVAR GSOP</a></center>
 					</td>
 					<td>
-						<center><a target="_blank" href="http://www.iode.org/index.php?option=com_content&view=article&id=461&Itemid=100199"><img height=90px style="padding-top:0px;" src="http://www.iquod.org//images/ioc.png" alt="..."><br>IOC/IODE project</a></center>
+						<center><a target="_blank" href="http://www.iode.org/index.php?option=com_content&view=article&id=461&Itemid=100199"><img height=90px style="padding-top:0px;" src="images/ioc.png" alt="..."><br>IOC/IODE project</a></center>
 					</td>
 					<td>
-						<center><a target="_blank" href="http://www.scor-int.org/SCOR_WGs_WG148.htm"><img height=90px style="padding-top:0px;" src="http://www.iquod.org//images/scar.png" alt="..."><br>SCOR working group 148</a></center>
+						<center><a target="_blank" href="http://www.scor-int.org/SCOR_WGs_WG148.htm"><img height=90px style="padding-top:0px;" src="images/scar.png" alt="..."><br>SCOR working group 148</a></center>
 					</td>	    
 				</table>
 			</center>
@@ -90,7 +66,7 @@
 			<div class="col-xs-4">
 				<div class="thumbnail">
 					<div class="caption">
-						<h3 style="padding-top:80px">MEOP-CTD database updated!</h3>
+						<h3>MEOP-CTD database updated!</h3>
 						<p>The MEOP-CTD database of seal CTD profiles has just been updated. It is publicly available, and includes almost 300,000 hydrographic profiles in the Southern Ocean, North Pacific and North Atlantic sectors. The data is available in a format similar to the Argo netCDF format, or in ODV Spreadsheet format.</p>
 						<p><a href="news.html#TBD" class="btn btn-default" role="button">More Details</a></p>
 					</div>
@@ -99,9 +75,12 @@
 		</div>
 	</div>
 
-	<div id="footer">
-		<img src="images/footer_logos.png">
-		<p>Developed by Rebecca Cowley (CSIRO) and Ricardo Domingues (NOAA/AOML)</p>
-	</div>
+	<div id="footer"></div>
+
+	<script>
+		// inject nav and footer
+	    nav('nav', 'home')
+		footer('footer')
+	</script>
 </body>
 </html>
