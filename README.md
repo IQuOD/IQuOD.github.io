@@ -4,11 +4,13 @@ This repo contains all the assets for www.iquod.org.
 
 ## Git & GitHub Quickstart
 
-### Suggestions
+Please open issues and pull requests with suggestions and bug reports. If you've never used git or GitHub before, see the instructions below, and please open an issue to ask for help if you're stuck.
+
+### Making Suggestions
 
 If you see any mistakes, have any requests or encounter any problems with iquod.org, please [click here to file an Issue](https://github.com/IQuOD/IQuOD.github.io/issues/new), and describe your suggestion there.
 
-### Contributing
+### Making Contributions
 
 Updates to this website are made by pull request. Follow the steps below to set up and start contributing:
 
