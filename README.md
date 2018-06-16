@@ -48,7 +48,13 @@ Do these steps every time you want to propose a change:
 
 2. Make whatever changes you like.
 
-3. When you're ready to submit, type:
+3. If you added new files to the repository, for each of them do:
+
+    ```
+    git add <your-new-file>
+    ```
+
+4. When you're ready to submit, type:
 
     ```
     git commit -a -m '<commit message>'
@@ -57,13 +63,13 @@ Do these steps every time you want to propose a change:
 
     This sends your changes to your fork on GitHub.
 
-4. Finally, head back to your fork on GitHub, click *New Pull Request*, and make the dropdowns presented look like this:
+5. Finally, head back to your fork on GitHub, click *New Pull Request*, and make the dropdowns presented look like this:
 
     ![](images/set-up-pr.png)
 
     the red box indicates the only thing you should need to change; make it match the branch name you created above.
 
-5. Click *Create Pull Request*, describe the reasoning for your change in the box provided, and click *Create Pull Request* one last time. This submits your changes for peer review - a maintainer of the website will review your changes and either accept them or ask for corrections.
+6. Click *Create Pull Request*, describe the reasoning for your change in the box provided, and click *Create Pull Request* one last time. This submits your changes for peer review - a maintainer of the website will review your changes and either accept them or ask for corrections.
 
 #### If you're stuck
 
