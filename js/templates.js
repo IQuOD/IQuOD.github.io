@@ -6,7 +6,7 @@ function footer(footerID){
     // inject the standard footer html into the element with ID footerID
 
     footerHTML = "\
-    	<img src='images/footer_logos.png'>\
+    	<img src='images/footer2018.png'>\
 		<p>Developed by Rebecca Cowley (CSIRO) and Ricardo Domingues (NOAA/AOML)</p>\
 	"
 
@@ -35,6 +35,7 @@ function nav(navID, currentID){
 							<li id='about'><a id='aboutlink' href='about.html'>About us</a></li>\
 							<li id='news'><a id='newslink' href='news.html'>News</a></li>\
 							<li id='docs'><a id='docslink' href='documents.html'>Documents and Progress reports</a></li>\
+							<li id='docs'><a id='docslink' href='publications.html'>IQuOD Publications</a></li>\
 							<li id='links'><a id='linkslink' href='links.html'>Links</a></li>\
 						</ul>\
 					</td>\
