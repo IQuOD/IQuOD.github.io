@@ -6,7 +6,7 @@ function footer(footerID){
     // inject the standard footer html into the element with ID footerID
 
     footerHTML = "\
-    	<img src='images/footer2018.png'>\
+    	<img src='images/footer2019.png'>\
 		<p>Developed by Rebecca Cowley (CSIRO) and Ricardo Domingues (NOAA/AOML)</p>\
 	"
 
