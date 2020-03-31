@@ -35,7 +35,7 @@ function nav(navID, currentID){
 							<li id='about'><a id='aboutlink' href='about.html'>About us</a></li>\
 							<li id='news'><a id='newslink' href='news.html'>News</a></li>\
 							<li id='docs'><a id='docslink' href='documents.html'>Documents and Progress reports</a></li>\
-							<li id='docs'><a id='docslink' href='publications.html'>IQuOD Publications</a></li>\
+							<li id='pubs'><a id='pubslink' href='publications.html'>IQuOD Publications</a></li>\
 							<li id='links'><a id='linkslink' href='links.html'>Links</a></li>\
 						</ul>\
 					</td>\
