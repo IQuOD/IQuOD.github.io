@@ -36,6 +36,7 @@ function nav(navID, currentID){
 							<li id='news'><a id='newslink' href='news.html'>News</a></li>\
 							<li id='docs'><a id='docslink' href='documents.html'>Documents and Progress reports</a></li>\
 							<li id='pubs'><a id='pubslink' href='publications.html'>IQuOD Publications</a></li>\
+							<li id='specs'><a id='specslink' href='specifications.html'>IQuOD Specifications</a></li>\
 							<li id='links'><a id='linkslink' href='links.html'>Links</a></li>\
 						</ul>\
 					</td>\
