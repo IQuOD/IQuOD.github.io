@@ -9,7 +9,7 @@
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999;
+  color: #edebeb;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -155,7 +155,7 @@ text-align:center;
 #footer p {
 	font-size: 13px;
 	margin-top:10px;
-	color:#707070;
+	color:#edebeb;
 	background-color: #000;
  	padding-bottom: 15px;
  	padding-top: 5px;
