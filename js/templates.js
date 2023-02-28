@@ -25,7 +25,7 @@ function nav(navID, currentID){
 						<a href='index.html'><img src='images/iquod_logo.png'></a>\
 					</td>\
 					<td width='65%' >\
-						<a class='navbar-brand' style='margin-top: 15px; font-size:28px;' rel='home' href='index.html' title=' '>International Quality controlled Ocean Database</a>\
+						<a class='navbar-brand' style='margin-top: 20px; font-size:35px; color:#edebeb;' rel='home' href='index.html' title=' '>International Quality-controlled Ocean Database (IQuOD)</a>\
 					</td>\
 				</tr>\
 				<tr>\
