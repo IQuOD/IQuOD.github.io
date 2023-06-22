@@ -7,7 +7,7 @@ function footer(footerID){
 
     footerHTML = "\
     	<img src='images/footer2019.png'>\
-		<p>Developed by Rebecca Cowley (CSIRO) and Ricardo Domingues (NOAA/AOML)</p>\
+		<p>Maintained by Rebecca Cowley, Developed by Ricardo Domingues</p>\
 	"
 
     document.getElementById(footerID).innerHTML = footerHTML
@@ -38,6 +38,7 @@ function nav(navID, currentID){
 							<li id='pubs'><a id='pubslink' href='publications.html'>IQuOD Publications</a></li>\
 							<li id='specs'><a id='specslink' href='specifications.html'>IQuOD Specifications</a></li>\
 							<li id='links'><a id='linkslink' href='links.html'>Links</a></li>\
+                            <li id='contactus'><a id='contactlink' href='contactus.html'>Contact</a></li>\
 						</ul>\
 					</td>\
 				</tr>\
